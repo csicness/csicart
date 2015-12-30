@@ -608,41 +608,61 @@ section.about img:nth-child(2n) {
     display: none;
   }
 
-  section.about p {
-    flex: 0 0 auto;
-    width: calc(99.99% * 1 - (30px - 30px * 1));
-    text-align: center;
-    float: none;
+  section.about div {
+    position: relative;
+    margin-top: 160px;
   }
 
-  section.about p:nth-child(n) {
-    margin-right: 30px;
+  section.about div > * {
+    position: absolute;
+    top: 50%;
+    right: auto;
+    bottom: auto;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
-  section.about p:last-child {
-    margin-right: 0;
-  }
-
-  section.about p:nth-child(undefinedn) {
-    margin-right: 0;
-  }
-
-  section.about img {
+  section.about div p {
     flex: 0 0 auto;
     width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
-    display: block;
-    margin: 0;
+    text-align: center;
+    float: none;
+    margin-top: 200px;
   }
 
-  section.about img:nth-child(n) {
+  section.about div p:nth-child(n) {
     margin-right: 30px;
   }
 
-  section.about img:last-child {
+  section.about div p:last-child {
     margin-right: 0;
   }
 
-  section.about img:nth-child(1n) {
+  section.about div p:nth-child(1n) {
+    margin-right: 0;
+  }
+
+  section.about div img {
+    flex: 0 0 auto;
+    width: calc(99.99% * 1/1 - (30px - 30px * 1/1));
+    margin: 0px auto;
+    height: 200px;
+    width: 200px;
+    -webkit-box-ordinal-group: 0;
+    -webkit-order: -1;
+        -ms-flex-order: -1;
+            order: -1;
+  }
+
+  section.about div img:nth-child(n) {
+    margin-right: 30px;
+  }
+
+  section.about div img:last-child {
+    margin-right: 0;
+  }
+
+  section.about div img:nth-child(1n) {
     margin-right: 0;
   }
 }
