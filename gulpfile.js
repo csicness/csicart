@@ -45,7 +45,7 @@ var
     }
   },
   js = {
-    in: source + (config.jsDir[--config.jsDir.length] == '/' ? config.jsDir + '**/*' : config.jsDir + '/**/*'),
+    in: source + (config.jsDir[--config.jsDir.length] == '/' ? config.jsDir + '**/*.js' : config.jsDir + '/**/*.js'),
     out: dest + config.jsDir,
     filename: config.jsName
   },
