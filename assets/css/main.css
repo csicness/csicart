@@ -593,7 +593,7 @@ section.gallery .container {
   width: 100%;
 }
 
-section.gallery .container a {
+section.gallery .container div {
   height: 50%;
   width: 50%;
   float: left;
@@ -604,13 +604,14 @@ section.gallery .container a {
   background-repeat: no-repeat;
   -webkit-transition: opacity ease-in-out, 0.5s;
           transition: opacity ease-in-out, 0.5s;
+  cursor: pointer;
 }
 
-section.gallery .container a:hover {
+section.gallery .container div:hover {
   opacity: 1;
 }
 
-section.gallery .container a span {
+section.gallery .container div span {
   text-align: center;
   font-size: 30px;
   background: white;
@@ -622,6 +623,30 @@ section.gallery .container a span {
   color: black;
   border: 1px solid black;
   padding: 8px;
+}
+
+section.gallery .galleria {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 900px;
+  width: 900px;
+}
+
+section.gallery button {
+  display: flex;
+  flex-flow: row wrap;
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  padding: 10px 50px;
+  font-size: 16px;
+  color: white;
+  background: black;
+  border-radius: 10px;
 }
 
 @media (max-width: 640px){
@@ -738,23 +763,27 @@ section.gallery .container a span {
     margin-left: auto;
     margin-right: auto;
   }
-  section.gallery .container a{
+  section.gallery .container div{
     flex: 0 0 auto;
     width: calc(99.999999% * 1/2);
     float: none;
   }
-  section.gallery .container a:nth-child(n){
+  section.gallery .container div:nth-child(n){
     margin-right: 0;
   }
-  section.gallery .container a:last-child{
+  section.gallery .container div:last-child{
     margin-right: 0;
   }
-  section.gallery .container a:nth-child(3n){
+  section.gallery .container div:nth-child(3n){
     margin-right: 0;
   }
-  section.gallery .container a span{
+  section.gallery .container div span{
     font-size: 14px;
     padding: 5px;
+  }
+  section.gallery .galleria{
+    height: 350px;
+    width: 350px;
   }
 }
 
