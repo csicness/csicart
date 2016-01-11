@@ -21,7 +21,7 @@
       <header>
         <nav class="site-nav">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li class="active"><a href="#home">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
             <li><a href="#contact">Contact</a></li>
@@ -71,7 +71,31 @@
           </div>
           <button>Back</button>
         </section>
-        <section class="contact"></section>
+        <section class="contact">
+          <div class="contactContainer">
+            <h2>Contact Me</h2>
+            <div class="contactInfo">
+              <form action="//formspree.io/csicartist@gmail.com" method="POST">
+                <div class="labelNames">
+                  <label class="split"><span>Your Name
+                      <input type="text" name="name"/></span></label>
+                  <label class="split"><span>Your Email
+                      <input type="email" name="_replyto"/></span></label>
+                </div>
+                <div class="textMessage">
+                  <label><span>Send me a message!
+                      <textarea name="message"></textarea></span></label>
+                </div>
+                <div class="sendWrap">
+                  <input id="sendButton" type="submit" value="Send"/>
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer><br/>
+          <p>Copywrite &copy; Curtis Chin 2016</p>
+        </footer>
       </div>
     </div>
     <script src="./vendors/jquery/dist/jquery.min.js"></script>
