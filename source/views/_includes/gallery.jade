@@ -1,5 +1,5 @@
 mixin thumb
-	a(href="https://www.fillmurray.com/500/500"): img(src="https://www.fillmurray.com/80/80")
+	a(href="https://www.fillmurray.com/980/500"): img(src="https://www.fillmurray.com/80/80")
 
 section.gallery#gallery
 	h2 Gallery
@@ -13,28 +13,28 @@ section.gallery#gallery
 		div(rel="design" style="background-image: url(http://fillmurray.com/130/80)")
 			span Design
 
-	.galleria#traditional
+	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
-	.galleria#illustration
+	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
-	.galleria#concept
+	.fotorama#concept(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
-	.galleria#design
+	.fotorama#design(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
 		+thumb
