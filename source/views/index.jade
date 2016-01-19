@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        title cSic Art
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1")
+        link(rel="shortcut icon", href="favicon.ico")
+        link(rel="stylesheet", href="assets/css/main.css")
+        link(rel="stylesheet", href="assets/twelve/galleria.twelve.css")
+    
+    body
+        .home-wrap
+            include _includes/header
+            .home-sections
+                include _includes/home
+                include _includes/about
+                include _includes/gallery
+                include _includes/contact
+                include _includes/footer
+
+        script(src="./vendors/jquery/dist/jquery.min.js")
+        script(src="./assets/twelve/galleria.twelve.min.js")
+        script(src="./assets/js/app.js")

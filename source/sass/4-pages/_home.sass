@@ -1,0 +1,63 @@
+@lost flexbox flex
+
+.home-wrap
+	height: 100%
+	display: flex
+	min-height: 100vh
+
+	@media (max-width: 640px)
+		display: block
+
+	.home-sections
+		margin-left: 200px
+		lost-flex-container: column
+
+		@media (max-width: 640px)
+			margin: 0
+			display: block
+
+		section	
+			margin: 20% 0 
+			padding: 50px 0
+			width: 100%
+			height: auto
+			
+			@media (max-width: 640px)
+				margin: 10% 0
+				padding: 25px 0
+
+			.home-container
+				lost-column: 1/1 flex
+				width: 100%
+				height: 350px
+				background:
+					image: url(../../assets/img/SiteBanner.jpg)
+					position: center
+					repeat: no-repeat
+					size: 100%
+
+				@media (max-width: 640px)
+					height: 175px
+			
+			.title
+				lost-column: 1/2 
+				text-align: center
+				h1
+					line-height: 0.5
+				h3
+					line-height: 0.2
+
+				@media (max-width: 640px)
+					lost-column: 1/1 flex
+					h1
+						font-size: 60px
+					h3
+						font-size: 23px
+						
+				@media (max-width: 1024px)
+					h1
+						line-height: 0.5
+					h3
+						line-height: 1.3
+					lost-column: 1/1
+					margin: auto

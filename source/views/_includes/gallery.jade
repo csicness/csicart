@@ -1,0 +1,44 @@
+mixin thumb
+	a(href="https://www.fillmurray.com/500/500"): img(src="https://www.fillmurray.com/80/80")
+
+section.gallery#gallery
+	h2 Gallery
+	.container
+		div(rel="traditional" style="background-image: url(http://fillmurray.com/100/80)")
+			span Traditional
+		div(rel="illustration" style="background-image: url(http://fillmurray.com/110/80)")
+			span Digital
+		div(rel="concept" style="background-image: url(http://fillmurray.com/120/80)")
+			span Concept
+		div(rel="design" style="background-image: url(http://fillmurray.com/130/80)")
+			span Design
+
+	.galleria#traditional
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+	.galleria#illustration
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+	.galleria#concept
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+	.galleria#design
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+		+thumb
+	button Back

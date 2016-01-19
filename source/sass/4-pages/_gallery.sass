@@ -1,0 +1,77 @@
+section.gallery
+
+	h2
+		lost-column: 1/1
+		text-align: center
+		padding-bottom: 50px
+
+	.container
+		lost-center: 980px
+		height: 500px
+		width: 100%
+
+		div
+	 		height: 50%
+	 		width: 50%
+	 		float: left
+	 		position: relative
+	 		opacity: 0.5
+	 		background-position: center
+	 		background-size: cover
+	 		background-repeat: no-repeat
+	 		transition: opacity ease-in-out, 0.5s
+ 			cursor: pointer
+
+	 		&:hover
+	 			opacity: 1
+
+	 		span
+	 			text-align: center
+	 			font-size: 30px
+	 			background: white
+	 			position: absolute
+	 			top: 50%
+	 			left: 50%
+	 			transform: translate(-50%, -50%)
+	 			color: black
+	 			border: 1px solid black
+	 			padding: 8px
+
+	.galleria
+		height: 900px
+		width: 900px
+		margin: 0 auto
+
+		@media(min-width: 640px) and (max-width: 1100px)
+			height: 700px
+			width: 700px
+
+	button
+		lost-center: 980px
+		margin-top: 10px
+		padding: 10px 50px
+		font-size: 16px
+		color: white
+		background: rgba(0,0,0,1)
+		border-radius: 10px
+
+	@media (max-width: 640px)
+
+		h2
+			padding-bottom: 0
+			
+		.container
+			lost-center: 320px 
+
+			div
+				lost-column: 1/2 3 0
+				float: none
+
+				span
+					font-size: 14px
+					padding: 5px
+					// margin: 110px 50px
+
+		.galleria
+			height: 350px
+			width: 350px
