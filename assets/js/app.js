@@ -1,6 +1,6 @@
 $(function() {
 
-	$('.galleria').hide();
+	$('.fotorama').hide();
 	$('section.gallery button').hide();
 
 	// Gallery Show 
@@ -14,21 +14,9 @@ $(function() {
 	// Gallery Back Button
 	$('section.gallery button').on('click', function () {
 		$(this).hide();
-		$('.galleria').hide();
+		$('.fotorama').hide();
 		$('section.gallery .container').show();
 	});
-
-	
-	// Galleria
-  	Galleria.configure({
-  		reponsive: true,
-  		imageMargin: 50,
-  		wait: true
-  	});
-
-  	Galleria.loadTheme('galleria/themes/twelve/galleria.twelve.js');
-
-	Galleria.run('.galleria');
 
 });
 (function($) {
