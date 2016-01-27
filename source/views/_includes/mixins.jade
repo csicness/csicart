@@ -1,0 +1,12 @@
+-
+	var traditonal = [
+		{"name": "cabin.jpg", "thumb": "cabin_thumb.jpg"},
+		{"name": "brokenFence.jpg", "thumb": "brokenFence_thumb.jpg"},
+		{"name": "crazyGracy.jpg", "thumb": "CrazyGracy_thumb.jpg"},
+		{"name": "Danger.jpg", "thumb": "Danger_thumb.jpg"},
+		{"name": "Daydream.jpg", "thumb": "Daydream_thumb.jpg"}
+		]
+
+mixin allTraditonal
+	each work in traditional
+		a(href="../../assets/img/traditional/#{name}"): img(src="../../assets/img/traditional/#{thumb}")
