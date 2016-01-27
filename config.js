@@ -19,7 +19,7 @@ module.exports = function() {
     build: 'build/',
     // Where the images are inside the source folder.
     // they will be copied to the same dir on the build folder
-    images: 'assets/img/**',
+    images: 'assets/img/**/**',
     /**
      * Views directory. This is the dir where all the Jade files should live
      * Important: only will be compiled *.jade files in this exact dir and not any sub dir
