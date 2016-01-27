@@ -1,32 +1,35 @@
+include mixins
+
 mixin thumb
 	a(href="https://www.fillmurray.com/980/500"): img(src="https://www.fillmurray.com/80/80")
 
 section.gallery#gallery
 	h2 Gallery
 	.container
-		div(rel="traditional" style="background-image: url(http://fillmurray.com/100/80)")
+		div(rel="traditional" style="background-image: url(../../assets/img/traditional/crazyGracy.jpg")
 			span Traditional
-		div(rel="illustration" style="background-image: url(http://fillmurray.com/110/80)")
+		div(rel="illustration" style="background-image: url(../../assets/img/digital/greatValley.jpg")
 			span Digital
-		div(rel="concept" style="background-image: url(http://fillmurray.com/120/80)")
+		div(rel="concept" style="background-image: url(../../assets/img/concept/dreadnaught.jpg)")
 			span Concept
 		div(rel="design" style="background-image: url(http://fillmurray.com/130/80)")
 			span Design
 
-	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
+	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="contain")
+		a(href="../../assets/img/traditional/cabin.jpg"): img(src="../../assets/img/traditional/cabin_thumb.jpg")
+		a(href="../../assets/img/traditional/brokenFence.jpg"): img(src="../../assets/img/traditional/brokenFence_thumb.jpg")
+		a(href="../../assets/img/traditional/danger.jpg"): img(src="../../assets/img/traditional/danger_thumb.jpg")
+		a(href="../../assets/img/traditional/forsaken.jpg"): img(src="../../assets/img/traditional/forsaken_thumb.jpg")
+		
+
+	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-width="100%" data-ratio="800/600")
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
 		+thumb
-	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
+
 	.fotorama#concept(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
@@ -34,6 +37,7 @@ section.gallery#gallery
 		+thumb
 		+thumb
 		+thumb
+
 	.fotorama#design(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
 		+thumb
 		+thumb
