@@ -16,29 +16,15 @@ section.gallery#gallery
 			span Design
 
 	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
-		a(href="../../assets/img/traditional/Cabin.jpg"): img(src="../../assets/img/traditional/cabin_thumb.jpg")
-		a(href="../../assets/img/traditional/BrokenFence.jpg"): img(src="../../assets/img/traditional/BrokenFence_thumb.jpg")
-		a(href="../../assets/img/traditional/Danger.jpg"): img(src="../../assets/img/traditional/Danger_thumb.jpg")
-		a(href="../../assets/img/traditional/Forsaken.jpg"): img(src="../../assets/img/traditional/Forsaken_thumb.jpg")
+		+traditional(allTraditional)
 		
+	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+		+digital(allDigital)
 
-	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="contain")
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
+	.fotorama#concept(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+		+concept(allConcept)
 
-	.fotorama#concept(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-		+thumb
-
-	.fotorama#design(data-nav="thumbs" data-loop="true" data-fit="scaledown" data-data-width:"100%" data-ratio="800/600")
+	.fotorama#design(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
 		+thumb
 		+thumb
 		+thumb

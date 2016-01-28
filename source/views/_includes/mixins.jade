@@ -1,12 +1,69 @@
+//- Mixin for Traditional Artwork gallery
+//- ===================================================================================================
 -
-	var traditonal = [
-		{"name": "cabin.jpg", "thumb": "cabin_thumb.jpg"},
-		{"name": "brokenFence.jpg", "thumb": "brokenFence_thumb.jpg"},
-		{"name": "crazyGracy.jpg", "thumb": "CrazyGracy_thumb.jpg"},
-		{"name": "Danger.jpg", "thumb": "Danger_thumb.jpg"},
-		{"name": "Daydream.jpg", "thumb": "Daydream_thumb.jpg"}
-		]
+	var allTraditional = 
+		[{"name": "GracVeda.jpg", "thumb": "GracVeda_thumb.jpg", "alt": "Ink Drawing 2013"},
+		{"name": "GraffWall.jpg", "thumb": "GraffWall_thumb.jpg", "alt": "Ink Drawing 2013"},
+		{"name": "Lighthouse.jpg", "thumb": "Lighthouse_thumb.jpg", "alt": "Ink Drawing 2013"},
+		{"name": "Raindrops.jpg", "thumb": "Raindrops_thumb.jpg", "alt": "Ink Drawing 2013"},
+		{"name": "Cabin.jpg", "thumb": "cabin_thumb.jpg", "alt": "Ink Drawing 2014"},
+		{"name": "Danger.jpg", "thumb": "Danger_thumb.jpg", "alt": "Ink Drawing 2014"},
+		{"name": "CrazyGracy.jpg", "thumb": "CrazyGracy_thumb.jpg", "alt": "Ink Drawing 2015"},
+		{"name": "RunwayShow.jpg", "thumb": "RunwayShow_thumb.jpg", "alt": "Woodcut 2012"},
+		{"name": "Daydream.jpg", "thumb": "Daydream_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "CaressedByDarkness.jpg", "thumb": "CaressedByDarkness_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "Forsaken.jpg", "thumb": "Forsaken_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "BrokenFence.jpg", "thumb": "BrokenFence_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "Rooftops.jpg", "thumb": "Rooftops_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "TheDuel.jpg", "thumb": "TheDuel_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "Village.jpg", "thumb": "Village_thumb.jpg", "alt": "Woodcut 2013"},
+		{"name": "Honor.jpg", "thumb": "Honor_thumb.jpg", "alt": "Woodcut 2013"}]
 
-mixin allTraditonal
-	each work in traditional
-		a(href="../../assets/img/traditional/#{name}"): img(src="../../assets/img/traditional/#{thumb}")
+mixin traditional(works)
+	each work in works
+		a(href="../../assets/img/traditional/#{work.name}"): img(src="../../assets/img/traditional/#{work.thumb}")
+
+//- ===================================================================================================
+//- Mixin for Digital Artwork gallery
+//- ====================================================================================================
+-
+	var allDigital = 
+		[{"name": "crawlingCavern.jpg", "thumb": "crawlingCavern_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "faith.jpg", "thumb": "faith_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "greatValley.jpg", "thumb": "greatValley_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "Hearts.jpg", "thumb": "hearts_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "Legend.jpg", "thumb": "Legend_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "Picnic.jpg", "thumb": "picnic_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "Rawr.jpg", "thumb": "rawr_thumb.jpg", "alt": "Digital Painting 2015"},
+		{"name": "RiverBank.jpg", "thumb": "RiverBank_thumb.jpg", "alt": "Digital Painting 2012"},
+		{"name": "Shadows.jpg", "thumb": "shadows_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "temple.jpg", "thumb": "tempel_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "TreePrint.jpg", "thumb": "tree_thumb.jpg", "alt": "Digital Painting 2013"}]
+
+mixin digital(works)
+	each work in works
+		a(href="../../assets/img/digital/#{work.name}"): img(src="../../assets/img/digital/#{work.thumb}")
+
+
+
+//- ===================================================================================================
+//- Mixin for Concept Artwork gallery
+//- ====================================================================================================
+-
+	var allConcept = 
+		[{"name": "BeneathTheSurface.jpg", "thumb": "BeneathTheSurface_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "Champion.jpg", "thumb": "Champion_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "destruction.jpg", "thumb": "destruction_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "dreadnaught.jpg", "thumb": "dreadnaught_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "gracyVeda.jpg", "thumb": "gracyVeda.jpg", "alt": "Digital Painting 2014"},
+		{"name": "graveyard.jpg", "thumb": "graveyard_thumb.jpg", "alt": "Digital Painting 2014"},
+		{"name": "landscape.jpg", "thumb": "landscape_thumb.jpg", "alt": "Digital Painting 2015"},
+		{"name": "Meeting.jpg", "thumb": "meeting_thumb.jpg", "alt": "Digital Painting 2012"},
+		{"name": "mercenary.jpg", "thumb": "mercenary_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "roofview.jpg", "thumb": "roofview_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "strikingBeauty.jpg", "thumb": "strikingBeauty_thumb.jpg", "alt": "Digital Painting 2013"},
+		{"name": "Witch.jpg", "thumb": "witch_thumb.jpg", "alt": "Digital Painting 2013"}]
+
+mixin concept(works)
+	each work in works
+		a(href="../../assets/img/concept/#{work.name}"): img(src="../../assets/img/concept/#{work.thumb}")

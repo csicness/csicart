@@ -598,6 +598,10 @@ section.gallery .fotorama {
   width: 100%;
 }
 
+section.gallery .fotorama_nav_frame {
+  padding-top: 5px !important;
+}
+
 section.gallery button {
   display: flex;
   flex-flow: row wrap;
