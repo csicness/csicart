@@ -6,9 +6,13 @@ $(function() {
 	// Gallery Show 
 	$('.container div').on('click', function () {
 		var category = $(this).attr('rel');
+		
 		$(this).parent('div').hide();
 		$('#'+category).show();
 		$('section.gallery button').show();
+		setTimeout(function() {
+			$('#'+category).fotorama();
+		}, 1000);
 	});
 
 	// Gallery Back Button

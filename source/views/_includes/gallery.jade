@@ -15,20 +15,18 @@ section.gallery#gallery
 		div(rel="design" style="background-image: url(http://fillmurray.com/130/80)")
 			span Design
 
-	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+	.fotorama#traditional(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown" data-auto="false")
 		+traditional(allTraditional)
-		
-	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+
+	.fotorama#illustration(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown" data-auto="false")
 		+digital(allDigital)
 
-	.fotorama#concept(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+	.fotorama#concept(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown" data-auto="false")
 		+concept(allConcept)
 
-	.fotorama#design(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown")
+	.fotorama#design(data-nav="thumbs" data-loop="true" data-width="100%" data-ratio="800/600" data-maxheight="700" data-fit="scaledown" data-auto="false")
 		+thumb
 		+thumb
 		+thumb
-		+thumb
-		+thumb
-		+thumb
+
 	button Back
