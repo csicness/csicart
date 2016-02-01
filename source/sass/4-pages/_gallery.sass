@@ -10,6 +10,9 @@ section.gallery
 		height: 500px
 		width: 100%
 
+		@media (max-width: 1366px)
+			width: 80%
+
 		div
 	 		height: 50%
 	 		width: 50%
@@ -43,8 +46,23 @@ section.gallery
 		align-items: center
 		width: 100%
 
-	.fotorama_nav_frame
-		padding-top: 5px !important
+	.fotorama__wrap
+		@media (max-width: 1366px)
+			width: 80% !important
+
+	.fotorama__stage
+		@media (max-width: 1366)
+			display: flex
+			align-items: center
+			margin: 0 auto
+
+	.fotorama__nav-wrap
+		margin-top: 10px
+		
+		@media (min-width: 1000px)
+			// width: 50%
+			// margin: 10px auto
+			overflow: hidden
 
 	button
 		lost-center: 980px
