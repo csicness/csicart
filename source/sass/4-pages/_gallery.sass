@@ -59,19 +59,18 @@ section.gallery
 		@media (min-width: 1000px)
 			overflow: hidden
 
-	.fotorama__arr
-		@media (max-width: 800px)
-			display: none
+	.button-wrap
+		display: flex
+		align-items: center
+		justify-content: center
+		margin-top: 15px
 
-	button
-		// lost-center: 980px flex
-		// margin-top: 15px
-		padding: 10px 50px
-		font-size: 16px
-		color: white
-		background: rgba(0,0,0,1)
-		border-radius: 10px
-		margin: 15px auto
+		button
+			padding: 10px 50px
+			font-size: 16px
+			color: white
+			background: rgba(0,0,0,1)
+			border-radius: 10px
 
 
 	@media (max-width: 640px)
@@ -86,9 +85,11 @@ section.gallery
 					padding: 5px
 
 		.fotorama
-			height: 350px
-			width: 350px
-			margin: 0 auto
+			height: 400px
+			width: 400px
 
-		button
+		.button-wrap
 			margin-top: 10px
+			button
+				padding: 10px 15px
+				font-size: 14px
