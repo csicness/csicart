@@ -6,7 +6,7 @@ section.gallery
 		padding-bottom: 50px
 
 	.container
-		lost-center: 980px
+		lost-center: 980px flex
 		height: 500px
 		width: 100%
 
@@ -64,7 +64,7 @@ section.gallery
 			display: none
 
 	button
-		lost-center: 980px
+		lost-center: 980px flex
 		margin-top: 15px
 		padding: 10px 50px
 		font-size: 16px
@@ -72,8 +72,6 @@ section.gallery
 		background: rgba(0,0,0,1)
 		border-radius: 10px
 
-		@media (max-width: 640px)
-			margin: 10px auto
 
 	@media (max-width: 640px)
 
@@ -81,12 +79,9 @@ section.gallery
 			padding-bottom: 0
 			
 		.container
-			lost-center: 320px
+			// lost-center: 320px
 
 			div
-				lost-column: 1/2 1
-				float: none
-
 				span
 					font-size: 14px
 					padding: 5px
@@ -95,3 +90,6 @@ section.gallery
 			height: 350px
 			width: 350px
 			margin: 0 auto
+
+		button
+			margin-top: 10px
