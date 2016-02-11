@@ -37,7 +37,7 @@ var
       errLogToConsole: true
     },
     pleeeaseOpt: {
-      autoprefixer: { options: {browsers: ['last 2 versions', 'Android >= 2.1', '> 2%'] }},
+      autoprefixer: { options: {browsers: ['last 2 versions', '> 2%'] }},
       rem: ['16px'],
       pseudoElements: true,
       mqpacker: true,
