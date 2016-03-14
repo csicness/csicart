@@ -2,14 +2,16 @@ section.contact#contact
 	.contactContainer
 		h2 Contact Me
 		.contactInfo
-			form(action="//formspree.io/csicartist@gmail.com" method="POST")
+			form#contactForm(action="//formspree.io/csicartist@gmail.com" method="POST")
+				input(type="text" name="_gotcha" style="display:none")
 				.labelNames
 					label.split: span Your Name
-						input(type="text", name="name")
+						input(type="text", name="name" required)
 					label.split: span Your Email
-						input(type="email", name="_replyto")
+						input(type="email", name="_replyto" required)
 				.textMessage
 					label: span Send me a message!
-						textarea(name="message")
+						textarea(name="message" required)
 				.sendWrap
 					input#sendButton(type="submit" value="Send")
+				input(type="hidden" name="_next" value="//csicness.github.io")
